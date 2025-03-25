@@ -1,0 +1,9 @@
+<cl-cart-link class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
+  <span class="svg-wrapper">{{ 'icon-cart.svg' | inline_asset_content }}</span>
+  <div class="cart-count-bubble">
+    <span aria-hidden="true">
+      <cl-cart-count></cl-cart-count>
+    </span>
+  </div>
+  <cl-cart open-on-add="true"></cl-cart>
+</cl-cart-link>

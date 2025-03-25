@@ -115,7 +115,7 @@
                   </h2>
                 {%- when 'price' -%}
                   <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
-                    {%- render 'price',
+                    {%- render 'cl-price',
                       product: product,
                       placeholder: placeholder,
                       use_variant: true,

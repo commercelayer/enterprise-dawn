@@ -240,6 +240,7 @@ class QuantityInput extends HTMLElement {
 
   onInputChange(event) {
     this.validateQtyRules();
+    document.querySelector('cl-add-to-cart').quantity = this.input.value;    
   }
 
   onButtonClick(event) {

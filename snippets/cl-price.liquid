@@ -1,0 +1,6 @@
+<cl-price code="{{ product.selected_or_first_available_variant.sku }}">
+  {%- if show_compare_at_price -%}
+    <cl-price-amount type="compare-at" class="{{ price_class }}"></cl-price-amount>
+  {%- endif -%}
+  <cl-price-amount type="price" class="{{ price_class }}"></cl-price-amount>
+</cl-price>

@@ -1,0 +1,16 @@
+<cl-availability code="{{ product.selected_or_first_available_variant.sku }}">
+  <cl-availability-status type="available" style="color: green;">Available </cl-availability-status>
+  <cl-availability-status type="available-with-info">
+    — Ready to be shipped in
+    <cl-availability-info type="min-days"></cl-availability-info>-<cl-availability-info
+      type="max-days"
+    ></cl-availability-info>
+    days with <cl-availability-info type="shipping-method-name"></cl-availability-info> (<cl-availability-info
+      type="shipping-method-price"
+    ></cl-availability-info
+    >)
+  </cl-availability-status>
+  <cl-availability-status type="unavailable" style="color: red;">
+    {{ 'products.product.sold_out' | t }}
+  </cl-availability-status>
+</cl-availability>

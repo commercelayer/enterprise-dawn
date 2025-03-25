@@ -1,0 +1,27 @@
+<script
+  type="module"
+  src="https://cdn.jsdelivr.net/npm/@commercelayer/drop-in.js@2/dist/drop-in/drop-in.esm.js"
+></script>
+
+<script>
+  window.commercelayerConfig = {
+    clientId: 'nuhHdvDWgaSOFO5b304VyFNirwWqbjJ-bsa4NgGYmUA',
+    scope: 'market:code:{{ localization.market.metafields.c11r.market }}',
+    debug: 'all', // default is 'none'
+    defaultAttributes: {
+      orders: {
+        /**
+         * The preferred language code (ISO 639-1) to be used when communicating with the customer.
+         * If the language is supported, the hosted checkout will be localized accordingly.
+         * @default 'en'
+         */
+        language_code: '{{ localization.language.iso_code }}',
+        /**
+         * The URL the cart's *Continue shopping* button points to. This is also used in the thank you page.
+         * @optional
+         */
+        return_url: 'https://enterprise-dawn.myshopify.com/',
+      },
+    },
+  };
+</script>
